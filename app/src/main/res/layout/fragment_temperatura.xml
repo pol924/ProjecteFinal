@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cat.copernic.projectefinal.FragmentTemperatura"
+    android:background="@drawable/pruebaredblue">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:id="@+id/imageView6"
+                android:src="@drawable/termometro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatura"
+                android:id="@+id/textView23"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatura interior "
+                android:id="@+id/textView10"
+                android:textSize="24dp"
+                android:paddingLeft="35dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0ºC"
+                android:id="@+id/textView18"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#24E9BE"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatura exterior"
+                android:id="@+id/textView21"
+                android:textSize="24dp"
+                android:paddingLeft="35dp"
+                android:textStyle="bold"
+                android:paddingBottom="80dp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0ºC"
+                android:id="@+id/textView20"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#24E9BE"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calefacción     "
+            android:id="@+id/switchCalefaccion"
+            android:checked="false"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#D90522" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="35dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:id="@+id/BtMenosCalefaccion"
+                android:textColor="#0080FF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="20ºC"
+                android:id="@+id/textViewCalefaccion"
+                android:textSize="25dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/BtMasCalefaccion"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aire acondicionado   "
+            android:id="@+id/switchAireAcondicionado"
+            android:checked="false"
+            android:textSize="30dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#0884FF" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:id="@+id/BtMenosAire"
+                android:textColor="#0080FF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="20ºC"
+                android:id="@+id/textViewAire"
+                android:textSize="25dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/BtMasAire"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
